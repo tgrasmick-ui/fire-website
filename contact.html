@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact – iFire Protection</title>
+    <meta name="description" content="Get a site visit or request a proposal for a wildfire defense system.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Contact – iFire Protection">
+    <meta property="og:description" content="Get a site visit or request a proposal for a wildfire defense system.">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "iFire Protection",
+        "description": "Get a site visit or request a proposal for a wildfire defense system.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "839 Monte Vista Dr",
+            "addressLocality": "Santa Paula",
+            "addressRegion": "CA",
+            "postalCode": "93060",
+            "addressCountry": "US"
+        },
+        "areaServed": ["Los Angeles County", "Ventura County", "Santa Barbara County", "Orange County", "Placer County", "El Dorado County"],
+        "url": "https://ifireprotection.com",
+        "telephone": "+1-310-963-4722"
+    }
+    </script>
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 16px;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        .map-placeholder {
+            width: 100%;
+            min-height: 280px;
+            background: #f1f5f9;
+            border: 1px solid #eee;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div>Wildland-Urban Interface specialists for Southern California</div>
+            <div>
+                <a href="tel:+13109634722">(310) 963-4722</a> • 
+                <a href="mailto:hello@ifireprotection.com">hello@ifireprotection.com</a>
+            </div>
+        </div>
+    </div>
+    
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" aria-label="Home">
+                <img src="assets/logo.svg" alt="iFire Protection logo">
+            </a>
+            <nav class="menu" aria-label="Main">
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a class="btn" href="contact.html" style="text-decoration:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container grid2">
+            <div>
+                <h1>Contact</h1>
+                <p>Tell us about your property and goals. We'll follow up with a short call and, if helpful, schedule a site visit.</p>
+                
+                <form class="card" action="https://formspree.io/f/your-form-id" method="POST" style="margin-top: 2rem;">
+                    <div class="form-group">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="county">County *</label>
+                        <select id="county" name="county" required>
+                            <option value="">Select a county...</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="Ventura">Ventura</option>
+                            <option value="Santa Barbara">Santa Barbara</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Placer">Placer</option>
+                            <option value="El Dorado">El Dorado</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="Sprinkler & Foam Systems">Sprinkler & Foam Systems</option>
+                            <option value="HIZ Assessment">Home Ignition Zone Assessment</option>
+                            <option value="Private Firefighting">Private Contract Firefighting</option>
+                            <option value="Multiple Services">Multiple Services</option>
+                            <option value="Not Sure">Not Sure - Need Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">How can we help? *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your property, wildfire concerns, and what you're looking to accomplish..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <p style="font-size: 14px; color: #6b7280; margin-top: 1rem;">
+                    Prefer email? <a href="mailto:hello@ifireprotection.com">hello@ifireprotection.com</a> • 
+                    Call <a href="tel:+13109634722">(310) 963-4722</a>
+                </p>
+            </div>
+            
+            <div>
+                <div class="card">
+                    <h3 style="margin-top: 0">Site Visit Prep</h3>
+                    <p>Having this information ready helps us provide more accurate recommendations:</p>
+                    <ul class="checks">
+                        <li>Water source and meter size</li>
+                        <li>Any existing pumps or tanks</li>
+                        <li>Roof & vent types</li>
+                        <li>Priority structures & access</li>
+                        <li>Previous wildfire exposure or near-misses</li>
+                    </ul>
+                </div>
+                
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h3 style="margin-top: 0">Service Area</h3>
+                    <div class="map-placeholder" id="map" aria-label="Service Area Map">
+                        <div>
+                            <strong style="display: block; margin-bottom: 0.5rem; font-size: 16px;">Counties Served</strong>
+                            <div>
+                                <span class="pill">Los Angeles</span>
+                                <span class="pill">Ventura</span>
+                                <span class="pill">Santa Barbara</span>
+                                <span class="pill">Orange</span>
+                                <span class="pill">Placer</span>
+                                <span class="pill">El Dorado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px; color: #6b7280; margin-top: 10px; text-align: center;">
+                        <strong>HQ:</strong> 839 Monte Vista Dr, Santa Paula, CA 93060
+                    </p>
+                </div>
+                
+                <div class="card" style="margin-top: 1.5rem; background: #FEF3C7;">
+                    <h3 style="margin-top: 0; color: #92400E;">Response Times</h3>
+                    <p style="font-size: 14px; color: #78350F;">
+                        <strong>Initial Contact:</strong> We respond to inquiries within 24 hours.<br><br>
+                        <strong>Site Visits:</strong> Typically scheduled within 1 week of initial contact.<br><br>
+                        <strong>Design Proposals:</strong> Delivered 1-2 weeks after site visit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+                <small>© 2025 iFire Protection – Wildfire Defense Systems & Private Firefighting – CSLB Pending</small>
+                <small>
+                    <a href="mailto:hello@ifireprotection.com">hello@ifireprotection.com</a> • 
+                    <a href="tel:+13109634722">(310) 963-4722</a> • 
+                    <a href="privacy.html">Privacy</a> • 
+                    <a href="terms.html">Terms</a>
+                </small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
